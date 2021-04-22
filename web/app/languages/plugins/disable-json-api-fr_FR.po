@@ -1,0 +1,57 @@
+# Translation of Plugins - Disable REST API - Development (trunk) in French (France)
+# This file is distributed under the same license as the Plugins - Disable REST API - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-02-07 20:59:05+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - Disable REST API - Development (trunk)\n"
+
+#. Author URI of the plugin
+msgid "http://www.binarytemplar.com"
+msgstr "http://www.binarytemplar.com"
+
+#. Author of the plugin
+msgid "Dave McHale"
+msgstr "Dave McHale"
+
+#. Plugin URI of the plugin
+msgid "http://www.binarytemplar.com/disable-json-api"
+msgstr "http://www.binarytemplar.com/disable-json-api"
+
+#: classes/disable-rest-api.php:165
+msgid "Settings"
+msgstr "Réglages"
+
+#: classes/disable-rest-api.php:143
+msgid "Disable REST API Settings"
+msgstr "Réglages de Disable REST API"
+
+#: classes/admin.php:31
+msgid "On this website, the REST API root is %s"
+msgstr "Sur ce site, la racine de l’API REST est %s"
+
+#: classes/admin.php:27
+msgid "REST API ROOT"
+msgstr "Racine API REST"
+
+#: classes/disable-rest-api.php:277
+msgid "DRA: Only authenticated users can access the REST API."
+msgstr "DRA : Uniquement les utilisateurs authentifiés peuvent accéder à l’API REST."
+
+#: admin.php:5
+msgid "By default, this plugin ensures that the entire REST API is protected from non-authenticated users. You may use this page to specify which endpoints should be allowed to behave as normal."
+msgstr "Par défaut, cette extension garantit que toute l’API REST est protégée des utilisateurs non-authentifiés. Vous pouvez utiliser cette page pour spécifier quels points de terminaison sont autorisés à se comporter normalement."
+
+#. Plugin Name of the plugin
+#: admin.php:2 classes/disable-rest-api.php:144
+msgid "Disable REST API"
+msgstr "Disable REST API"
+
+#: admin.php:7
+msgid "IMPORTANT NOTE:"
+msgstr "NOTE IMPORTANTE :"
