@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c2f706b6e3f0180e6ea30768e3f2763d",
+    "content-hash": "337be3ee0b53e47aebf2edca66f75bd3",
     "packages": [
         {
             "name": "composer/installers",
@@ -1110,24 +1110,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/jetpack/"
-        },
-        {
-            "name": "wpackagist-plugin/matomo",
-            "version": "4.2.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/matomo/",
-                "reference": "tags/4.2.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/matomo.4.2.0.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/matomo/"
         },
         {
             "name": "wpackagist-plugin/redirection",
