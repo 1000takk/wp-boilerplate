@@ -2,9 +2,12 @@
 web/app/plugins/*
 !web/app/plugins/.gitkeep
 web/app/mu-plugins/*/
+!web/app/mu-plugins/core
 web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
+web/app/languages/*
+!web/app/languages/.gitkeep
 
 # WordPress
 web/wp
@@ -23,3 +26,24 @@ web/.htaccess
 
 # WP-CLI
 wp-cli.local.yml
+db-sync
+sql-dump-*.sql
+
+# Node Package Manager
+node_modules
+
+# Vagrant
+bin
+.vagrant
+
+# OS
+*.sublime-*
+.*DS_Store
+._*
+
+# Editors
+.idea/*
+.vscode/*
+
+# Matomo cache
+web/app/cache/matomo
