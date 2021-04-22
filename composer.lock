@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d461ba73ff944313442f9873936f8ec9",
+    "content-hash": "c2f706b6e3f0180e6ea30768e3f2763d",
     "packages": [
         {
             "name": "composer/installers",
@@ -156,10 +156,10 @@
         },
         {
             "name": "elliotcondon/advanced-custom-fields-pro",
-            "version": "5.9.4",
+            "version": "5.9.5",
             "dist": {
                 "type": "zip",
-                "url": "https://composer.1000takk.dev/elliotcondon/advanced-custom-fields-pro.5.9.4.zip"
+                "url": "https://composer.1000takk.dev/elliotcondon/advanced-custom-fields-pro.5.9.5.zip"
             },
             "require": {
                 "composer/installers": "^1.5"
