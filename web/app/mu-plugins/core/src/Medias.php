@@ -12,7 +12,6 @@ class Medias
      */
     public function __construct()
     {
-        add_image_size('size-name', 00, 00, true);
         add_filter('image_resize_dimensions', [ $this, 'crop' ], 10, 6);
     }
 
