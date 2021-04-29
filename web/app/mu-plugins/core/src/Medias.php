@@ -12,13 +12,13 @@ class Medias
      */
     public function __construct()
     {
-        add_filter('image_resize_dimensions', [ $this, 'crop' ], 10, 6);
+        add_filter('image_resize_dimensions', [$this, 'crop'], 10, 6);
     }
 
     /**
      * Add real crop functionality.
      */
-    public function crop($default, $orig_w, $orig_h, $new_w, $new_h, $crop)
+    public function crop($default, $orig_w, $orig_h, $new_w, $new_h, $crop): ?array
     {
         if (!$crop) {
             return null; // let the wordpress default function handle this
