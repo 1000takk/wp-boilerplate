@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "337be3ee0b53e47aebf2edca66f75bd3",
+    "content-hash": "68c6b12def3ad52d50e36c1a43c2e6b9",
     "packages": [
         {
             "name": "composer/installers",
@@ -1058,24 +1058,6 @@
             "homepage": "https://wordpress.org/plugins/clean-image-filenames/"
         },
         {
-            "name": "wpackagist-plugin/disable-comments",
-            "version": "2.1.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/disable-comments/",
-                "reference": "tags/2.1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.1.1.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/disable-comments/"
-        },
-        {
             "name": "wpackagist-plugin/disable-json-api",
             "version": "1.6",
             "source": {
@@ -1650,7 +1632,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.1"
+        "php": ">=7.4"
     },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"
