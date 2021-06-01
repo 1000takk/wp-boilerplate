@@ -22,6 +22,7 @@ class Admin
         add_action('wp_dashboard_setup', [ $this, 'removeDashboardWidgets' ]);
         add_action('wp_before_admin_bar_render', [$this, 'cleanAdminBar'], 0);
         add_action('admin_menu', [$this, 'cleanAdminMenu']);
+        add_filter('tiny_mce_before_init', [$this, 'filterContentOnPaste']);
     }
 
     /**
@@ -83,5 +84,36 @@ class Admin
             );
             remove_menu_page('plugins.php');
         }
+    }
+
+    /**
+     * Filter copied content on paste
+     *  - Strip unwanted tags
+     *  - Strip all HTML attributes excepted href on a tags
+     *  - Remove multiple empty paragraphs
+     *
+     * @param $in array
+     * @return array
+     */
+    public function filterContentOnPaste(array $in): array
+    {
+        $in['paste_preprocess'] = "function(pl,o){ 
+            // remove the following tags completely:
+            o.content = o.content.replace(/<\/*(applet|area|article|aside|audio|base|basefont|bdi|bdo|body|canvas|command|datalist|embed|figcaption|figure|font|footer|frame|frameset|head|header|hgroup|hr|html|img|keygen|link|map|mark|menu|meta|meter|nav|noframes|noscript|object|optgroup|output|param|progress|rp|rt|ruby|script|section|source|span|style|time|title|track|video|wbr)[^>]*>/gi,'');
+            // remove all attributes from these tags:
+            o.content = o.content.replace(/<(details|summary|div|table|tbody|tr|td|th|p|b|font|strong|i|em|h1|h2|h3|h4|h5|h6|hr|ul|li|ol|code|blockquote|address|dir|dt|dd|dl|big|cite|del|dfn|ins|kbd|q|samp|small|s|strike|sub|sup|tt|u|var|caption) [^>]*>/gi,'<$1>');
+            // keep only href in the a tag (needs to be refined to also keep _target and ID):
+            // o.content = o.content.replace(/<a [^>]*href=(\"|')(.*?)(\"|')[^>]*>/gi,'<a href=\"$2\">');
+            // replace div tag with p tag:
+            o.content = o.content.replace(/<(\/)*div[^>]*>/gi,'<$1p>');
+            // remove double paragraphs:
+            o.content = o.content.replace(/<\/p>[\s\\r\\n]+<\/p>/gi,'</p></p>');
+            o.content = o.content.replace(/<\<p>[\s\\r\\n]+<p>/gi,'<p><p>');
+            o.content = o.content.replace(/<\/p>[\s\\r\\n]+<\/p>/gi,'</p></p>');
+            o.content = o.content.replace(/<\<p>[\s\\r\\n]+<p>/gi,'<p><p>');
+            o.content = o.content.replace(/(<\/p>)+/gi,'</p>');
+            o.content = o.content.replace(/(<p>)+/gi,'<p>');
+          }";
+        return $in;
     }
 }
