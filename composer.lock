@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "68c6b12def3ad52d50e36c1a43c2e6b9",
+    "content-hash": "6d6a4682fad3ee65428fbea540a01888",
     "packages": [
         {
             "name": "composer/installers",
@@ -1058,24 +1058,6 @@
             "homepage": "https://wordpress.org/plugins/clean-image-filenames/"
         },
         {
-            "name": "wpackagist-plugin/disable-json-api",
-            "version": "1.6",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/disable-json-api/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-json-api.zip?timestamp=1613360355"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/disable-json-api/"
-        },
-        {
             "name": "wpackagist-plugin/jetpack",
             "version": "9.6.1",
             "source": {
@@ -1635,5 +1617,5 @@
         "php": ">=7.4"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
