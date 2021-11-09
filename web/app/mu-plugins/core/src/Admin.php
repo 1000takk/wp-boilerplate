@@ -30,7 +30,7 @@ class Admin
      */
     public function enqueueStylesScripts()
     {
-        wp_enqueue_style("{$this->module_slug}-css", Helpers::pluginRootUrl('assets/css/main.css'));
+        wp_enqueue_style($this->module_slug, Helpers::pluginRootUrl('assets/css/main.css'));
     }
 
     /**
@@ -72,16 +72,7 @@ class Admin
     public function cleanAdminMenu()
     {
         if (env('WP_ENV') === 'production') {
-            remove_menu_page('themes.php');
-            add_menu_page(
-                __('Customize'),
-                __('Customize'),
-                'edit_theme_options',
-                'customize.php',
-                '',
-                'dashicons-admin-appearance',
-                60
-            );
+            remove_submenu_page('themes.php', 'themes.php');
             remove_menu_page('plugins.php');
         }
     }
