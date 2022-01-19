@@ -1,17 +1,24 @@
-.editorconfig export-ignore
-.phpcs.xml export-ignore
-.gitattributes export-ignore
-.github export-ignore
-.gitignores export-ignore
-.gitkeep export-ignore
-README.* export-ignore
-LICENCE.* export-ignore
-CHANGELOG.* export-ignore
-.eslint export-ignore
-.eslint.js export-ignore
-.stylelintrc export-ignore
-.stylelintrc.js export-ignore
-.prettierrc export-ignore
-.styleci.yml export-ignore
-phpunit.xml export-ignore
-/ansible/ export-ignore
+# GIT and gitattributes files
+*.gitattributes export-ignore
+*.github export-ignore
+*.gitignores export-ignore
+*.gitkeep export-ignore
+
+# IDE Config, coding standards and linters/fixers
+*.editorconfig export-ignore
+*.phpcs.xml export-ignore
+*.eslint export-ignore
+*.eslint.js export-ignore
+*.stylelintrc export-ignore
+*.stylelintrc.js export-ignore
+*.prettierrc export-ignore
+*.styleci.yml export-ignore
+*phpunit.xml export-ignore
+
+# Ansible folder
+ansible/ export-ignore
+
+# general text files
+*README.* export-ignore
+*LICENCE.* export-ignore
+*CHANGELOG.* export-ignore
