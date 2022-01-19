@@ -1,0 +1,17 @@
+.editorconfig export-ignore
+.phpcs.xml export-ignore
+.gitattributes export-ignore
+.github export-ignore
+.gitignores export-ignore
+.gitkeep export-ignore
+README.* export-ignore
+LICENCE.* export-ignore
+CHANGELOG.* export-ignore
+.eslint export-ignore
+.eslint.js export-ignore
+.stylelintrc export-ignore
+.stylelintrc.js export-ignore
+.prettierrc export-ignore
+.styleci.yml export-ignore
+phpunit.xml export-ignore
+/ansible/ export-ignore
