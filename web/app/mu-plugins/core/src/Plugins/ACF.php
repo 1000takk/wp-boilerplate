@@ -16,7 +16,17 @@ class ACF
     {
         add_filter('acf/fields/wysiwyg/toolbars', function ($toolbars) {
             $toolbars['Simple'] = [];
-            $toolbars['Simple'][1] = ['bold', 'italic', 'underline', 'strikethrough', 'link', 'unlink', 'bullist', 'numlist'];
+            $toolbars['Simple'][1] = [
+                'bold' ,
+                'italic' ,
+                'underline',
+                'strikethrough',
+                'link',
+                'unlink',
+                'bullist',
+                'numlist',
+                'removeformat',
+            ];
             return $toolbars;
         });
 
